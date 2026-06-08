@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<!-- ▼▼ 公開前に SITE_URL を実ドメインに置換（例 https://zokuseijutsu.vercel.app） ▼▼
-     ogp.png / apple-touch-icon.png / favicon-32.png は index.html と同じ階層に置くこと。 -->
+<!-- ✅ 本番ドメイン設定済み（zokuseijutsu-lp.vercel.app）
+     ※ ogp.png は index.html と同じ階層（リポジトリ直下）に置くこと。 -->
 <title>属性術 — あなたの本質を視る｜縁結び占い・E先生</title>
 <meta name="description" content="生年月日が導く、あなたの属性。縁結び占い・E先生のオリジナル占術『属性術』。霧・風・炎・星・森・海――あなたとお相手の縁を無料で視る鑑定ツール。">
-<link rel="canonical" href="https://SITE_URL/">
+<link rel="canonical" href="https://zokuseijutsu-lp.vercel.app/">
 <meta name="theme-color" content="#150a30">
 
 <!-- Open Graph (Facebook / LINE / Discord 等) -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="縁結び占い・E先生">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:url" content="https://SITE_URL/">
+<meta property="og:url" content="https://zokuseijutsu-lp.vercel.app/">
 <meta property="og:title" content="属性術 — あなたの本質を視る｜縁結び占い・E先生">
 <meta property="og:description" content="生年月日が導く、あなたの属性。霧・風・炎・星・森・海――あなたとお相手の縁を無料で視る、E先生オリジナル占術。">
-<meta property="og:image" content="https://SITE_URL/ogp.png">
+<meta property="og:image" content="https://zokuseijutsu-lp.vercel.app/ogp.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="属性術 — 縁結び占い・E先生">
@@ -27,7 +27,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="属性術 — あなたの本質を視る｜縁結び占い・E先生">
 <meta name="twitter:description" content="生年月日が導く、あなたの属性。あなたとお相手の縁を無料で視る、E先生オリジナル占術。">
-<meta name="twitter:image" content="https://SITE_URL/ogp.png">
+<meta name="twitter:image" content="https://zokuseijutsu-lp.vercel.app/ogp.png">
 
 <!-- Icons（画像を埋め込み済み・別ファイル不要） -->
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAExklEQVR4nLVWa0wUVxS+sy92FyWLPKwLCK7AdgHDoGAV06pJq023VKs/Wv40WmNp7A8YGtsEqI9KaBqrW5rWNKYvfjU0tCnIGmytiVIrRR6rBDBKeba8lzeCy73n9MfAsMwsq2nKyflxz5lzvu+ce8/cGS49JoespGgA2coSIMLKEjxhBzf+fFHpfO6ZqscT+O+guvYlceFyOnyxCuLi2a2XlyXw08HN2xkS7junYpUBXxDHQh3CjrRLPkG4lIjDPh/8cXufiH7slGW5CkS5cKqdEMLbhfS0ch8EyeY3lN6augMup+Ptk9H+oQkhHEcQCSHky9NdvF3YlvqTLECFCDIV0bNORCFCQZ7lwKvha4LVyjBE2LsnpPi8LTRUgwhZJ6JcTkdN3QFZDLfpqUxvwtqG11xOx1sfmEWz5JvkCLO++veRltYpZfl7XgjdEGNsvTeVndsCgISQi2d6ebuwdXOpFKMBrymqa8wU911yIjAEert+pPLykJLgaashZr2uuWWcssVJcTkdtQ1Casr38wRI5FN0pCCMLDgBGADjkwO1WlQSrFunAWCATAI5UhD2deEQIUTyLOlgHtTLg0CRqesbxiqr5jvQ61WbEldtTzOtDdfdqnHX1o5cueb2A6LBhffAdeewy+k4lGciXj2pOABgahU8v8tkswbarIGWGINazRFC5ubQoCf5H7Y9nFmyB4fyTN8RR6NL4JO/JYSoAEFUidlbDXpEoCoVbEkJvHp9OCun+dr1IQT6VUn3K683DA3PJNoMshQZ1GIH83uy1AzQITDm8dDdO4J2pQddLPknKkILjNni9ZkHQ3emB+1MDzqac6+ja0Z5QiKUCgmIOu9dMJGAVotqjiHQgaEZBMro3A/l/Z3d0wjU1TReUTWIQBFoZ89D7ywZlPwu8jb1Bg0ARSQdPdMAtH/QczBjTZRZA0A3JeiNBhMAnZxmDCj6GLF5KPlt6m0aDRwy1jfgee9YxM2a0aLPemYfgWW9LjZa52qa+NHpvtM8kZsVmWQ13G2d9rVFQJS3qbcZHakBoFer3ds2r962xfhmZujA0FyUWQ1AU5MNHBdsidaHhXD5Oeajx9vGxqnPDhbvonjbed4ulJ5FyWO1BNA5WvHLMAJDYLfqx3+9MdLXP4vANCrcv9c0OelBYA/ap0fHPFJW6Vnk7UK87bxoqgCZpBKzqEnWgKvVI4PuWQAKjO7evqr0wsYdqcaGpvGSsr6pqUeJ8QHAKDDqB0SlPP2ycxokEB2pNa3mPi/pRQJiB1euj9Tdncg90/5uYUdd02T+J116HSIwj4dKCGXnNLJpXNLBBmsRbxdE/oQ4nVDYPjHtAWSPPLT5/mR338PjH3U0tkyKwT19MzWNY+7R2Yrfhr3L5+3CBmuR5OHWrkqVHU7n/QKX07Ff8DEYMtFquDm6OKE/OwJ5uxATX+gdw4UHpigzux6cdDkd+3ImHsshSfmnQbxdiI47LfNzocZknwk9bafFb0NG9ph/6EvFJkIIbxeiYk8qn3IhxqTlMv9uK5T+Kl7OdisDKotDxAVvFyJjC3yCcMGGBD/V9f5VJC58/heJE0EIMW/MWw6BM+mtfggk6Wv/WOlcZ3n/sYlcUEDckxD8Z5F/D/53+ReielxLsFJ3kAAAAABJRU5ErkJggg==">
